@@ -7,16 +7,19 @@ public class EX05 {
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
 		int b = scan.nextInt();
-	
+		
 		if(b<45) {
-			a--;
-			b=60-(45-b);
+			int c = b+15;
+			
 			if(a<0) {
 				a=23;
-			}
-			System.out.println(a+""+b);
-			}else {
-				System.out.println(a+""+(b-45));
-			}
+			}System.out.println(a-1);
+			System.out.println(c);
+		}else if(b>45) {
+			System.out.println(a);
+			System.out.println(b-45);
+		}else {
+			System.out.println(a+""+(b-45));
+		}
 	}
 }

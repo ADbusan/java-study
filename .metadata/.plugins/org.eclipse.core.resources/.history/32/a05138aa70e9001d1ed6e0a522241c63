@@ -11,7 +11,7 @@ public class EX05 {
 		if(b<45) {
 			a--;
 			b=60-(45-b);
-			if(a<0) {
+			if(b<0) {
 				a=23;
 			}
 			System.out.println(a+""+b);
