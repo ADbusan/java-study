@@ -1,0 +1,24 @@
+package jh02;
+
+import java.util.Scanner;
+
+public class EX06 {
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // 현재 시각 입력 받기
+        int nowHour = sc.nextInt();
+        int nowMin = sc.nextInt();
+
+        // 요리에 걸리는 시간 입력 받기
+        int cookingTime = sc.nextInt();
+
+        // 요리 종료 시각 계산
+        int endMin = nowMin + cookingTime; // 현재 분에 요리 시간을 더한 값
+        int endHour = nowHour + endMin / 60; // 분을 시간으로 환산하고 현재 시각에 더한 값
+        endMin %= 60; // 60분이 넘어가면 1시간으로 환산하고 남은 분 계산
+
+        // 출력
+        System.out.println(endHour % 24 + " " + endMin);
+	}
+}
