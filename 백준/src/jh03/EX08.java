@@ -1,0 +1,21 @@
+package jh03;
+
+import java.util.Scanner;
+
+public class EX08 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+	
+		for(int i=0; i<10 ; i++) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			System.out.println(a+b);
+			if(a==0 && b ==0) {
+				System.out.println("0"+"0");
+				break;
+			}
+				
+		}
+	}
+}
