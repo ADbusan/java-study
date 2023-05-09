@@ -16,6 +16,6 @@ public class EX03 {
 		}
 //		숫자를 순서대로 정렬
 		Arrays.sort(c);
-		System.out.println(c[0]+" "+c[a-1]);
+		System.out.println(c[]+""+c[a-1]);
 	}
 }

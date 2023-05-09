@@ -1,0 +1,23 @@
+package jh04;
+
+import java.util.Scanner;
+
+public class EX04 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int[] a = new int[9];
+		int max = 0;
+		
+		for(int i=0; i<9;i++) {
+			a[i] = scan.nextInt();
+		}
+		for(int i=0;i<9;i++) {
+			if(a[i]>0) {
+				max = a[i];
+			}else if(a[i] == max) {
+				System.out.println(i+1);
+			}
+		}
+		
+	}
+}
