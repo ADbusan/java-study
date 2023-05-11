@@ -13,7 +13,7 @@ public class EX08 {
 			int b = scan.nextInt();
 			a.add(b%42);
 		}
-		System.out.println(a.size());
+		System.out.println(a.size()1);
 		
 	}
 }
