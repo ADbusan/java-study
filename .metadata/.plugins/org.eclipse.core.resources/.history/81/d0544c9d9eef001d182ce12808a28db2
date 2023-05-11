@@ -1,0 +1,15 @@
+package jh04;
+
+import java.util.Scanner;
+
+public class EX08 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		for(int i=0;i<10;i++) {
+			
+			System.out.println("숫자를 입력");
+			int a = scan.nextInt();
+		}
+	}
+}
