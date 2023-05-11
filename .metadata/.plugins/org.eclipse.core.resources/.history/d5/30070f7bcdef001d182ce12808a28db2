@@ -1,0 +1,25 @@
+package jh04;
+
+import java.sql.Array;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class EX09 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int[] b = new int[a];
+		double total=0;
+		for(int i=0;i<a;i++) {
+			b[i] = scan.nextInt();
+		}
+		Arrays.sort(b);
+		
+		for(int i=0;i<a;i++) {
+			double c = b[a-1]*100;
+			double d = b[i]*10000;
+			total += d/c;
+		}
+		System.out.println(total);
+	}
+}
