@@ -1,0 +1,16 @@
+package jh05;
+
+import java.util.Scanner;
+
+public class EX05 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String a = scan.nextLine().trim();
+		
+		String[] b = a.split(" ");
+		
+		int count = b.length;
+		
+		System.out.println(conn);
+	}
+}
